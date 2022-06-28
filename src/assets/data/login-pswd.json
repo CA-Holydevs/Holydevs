@@ -1,0 +1,5 @@
+[
+    { "id":1, "login": "flav64.lacluque@gmail.com", "password": "1234", "role": "Intervenant" },
+    { "id":2, "login": "user2", "password": "1235", "role": "Participant"}
+
+]
