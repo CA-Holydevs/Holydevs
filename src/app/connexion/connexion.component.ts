@@ -24,8 +24,6 @@ export class ConnexionComponent implements OnInit {
     
   }
 
-  
-
   isInLogins(user:string, pswd:string): boolean{
     for(let i=0; i< this.logins.length; i++ ){
       if(this.logins[i].login == user && this.logins[i].password == pswd){

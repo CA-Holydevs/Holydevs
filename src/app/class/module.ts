@@ -17,11 +17,11 @@ export class Module {
 
     public setModule = (module: Module) => {
         this._name = module.name;
-        this._place
-        this._startDate
-        this._endDate
-        this._intervenantList
-        this._participantList
+        this._place = module.place;
+        this._startDate = module.startDate;
+        this._endDate = module.endDate;
+        this._intervenantList = module.intervenantList;
+        this._participantList = module.participantList;
     }
 
     get name(): String {

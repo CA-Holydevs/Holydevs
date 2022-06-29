@@ -1,5 +1,17 @@
-<div *ngFor="let module of this.moduleService._module">
-    <div class="wrapContent">
-        Test
-    </div>
+<div *ngFor="let module of this.moduleService._module | keyvalue ">
+    <p-card>
+        <ng-template pTemplate="title">
+            <div class="title">{{module.value.name}}</div>
+        </ng-template>
+        <hr>
+        <ng-template pTemplate="content">
+            <div class="center"><em>À {{module.value.place}}</em></div>
+            <p class="comment center"></p>
+        </ng-template>
+        <ng-template pTemplate="footer">
+            <div class="flex">
+                <img class="valid center" alt="Signature" src="assets/showcase/images/usercard.png">
+            </div>
+        </ng-template>
+    </p-card>
 </div>
