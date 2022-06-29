@@ -15,11 +15,21 @@
 <ng-template #content let-modal>
     <div class="modal-body">
         <div class="envoie-mail">Envoyer un mail à</div>
+        <ul>
+            <li *ngFor="let student of studentsList">
+                <span class="eleve">{{ student.name }}</span>
+            </li>
+        </ul>
     </div>
 </ng-template>
 
 <ng-template #content2 let-modal>
     <div class="modal-body">
         <div class="mettre-absent">Mettre absent:</div>
+        <ul>
+            <li *ngFor="let student of studentsList">
+                <span class="eleve">{{ student.name }}</span>
+            </li>
+        </ul>
     </div>
 </ng-template>
