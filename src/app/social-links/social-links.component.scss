@@ -1,0 +1,13 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+.logos {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    a {
+        margin-right: 1rem;
+        &::before {
+            font-size: 2rem;
+        }
+    }
+}

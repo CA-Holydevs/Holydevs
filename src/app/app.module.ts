@@ -22,7 +22,7 @@ import { SignaturePadModule } from 'angular2-signaturepad';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { ModuleListComponent } from './module-list/module-list.component';
 import { FirstConnexionComponent } from './first-connexion/first-connexion.component';
-import { StructPrincipaleComponent } from './struct-principale/struct-principale.component';
+import { SocialLinksComponent } from './social-links/social-links.component';
 import { CardParticipantComponent } from './card-participant/card-participant.component';
 import { CardModuleComponent } from './card-module/card-module.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -45,7 +45,7 @@ import { NavigationTabsModule } from './dashboard/navigation-tabs/navigation-tab
     ConnexionComponent,
     ModuleListComponent,
     FirstConnexionComponent,
-    StructPrincipaleComponent,
+    SocialLinksComponent,
     CardParticipantComponent,
     CardModuleComponent,
     CalenderComponent,

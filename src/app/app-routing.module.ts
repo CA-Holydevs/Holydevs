@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {ConnexionComponent} from './connexion/connexion.component';
 import {ModuleListComponent} from './module-list/module-list.component';
 import {FirstConnexionComponent} from   './first-connexion/first-connexion.component';
-import { StructPrincipaleComponent } from './struct-principale/struct-principale.component';
+import { SocialLinksComponent } from './social-links/social-links.component';
 import { CardParticipantComponent } from './card-participant/card-participant.component';
 import { CalenderComponent } from './calender/calender.component';
 import { DashboardModule } from './dashboard/dashboard.module';
@@ -42,8 +42,8 @@ const routes: Routes = [
   { path: 'signature',
     component: SignatureComponent  //TODO: Remove this route
   },
-  { path: 'struct-principale',
-    component: StructPrincipaleComponent
+  { path: 'social-links',
+    component: SocialLinksComponent
   },
   { path: 'menu-module',
     component: MenuModuleComponent
