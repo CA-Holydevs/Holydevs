@@ -1,8 +1,6 @@
 import { Component, HostBinding, OnInit } from '@angular/core';
-import { ModaleDeconnexionComponent } from 'src/app/modale-deconnexion/modale-deconnexion.component';
 import { Router } from '@angular/router';
 import { PrimeNGConfig } from 'primeng/api';
-
 
 @Component({
   selector: 'dashboard-header',
@@ -11,20 +9,19 @@ import { PrimeNGConfig } from 'primeng/api';
 })
 export class DashboardHeaderComponent implements OnInit {
 
-  constructor(private primengConfig: PrimeNGConfig, private router: Router) { }
+  constructor(private primengConfig: PrimeNGConfig, private router: Router) {}
 
-  ngOnInit(): void {
-    this.primengConfig.ripple = true;
-  }
+    ngOnInit() {
+      this.primengConfig.ripple = true;
+    }
+    
+    displayModal: boolean = false;
 
-  displayModal: boolean= false; 
-
-  showModalDialog() {
+    showModalDialog() {
       this.displayModal = true;
   }
 
   deconnexion(){
-    this.router.navigate(['/connexion']);
+    this.router.navigate(['/connexion'])
   }
-
 }

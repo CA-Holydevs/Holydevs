@@ -12,6 +12,8 @@ import { ButtonModule } from 'primeng/button';
 import { CheckboxModule } from 'primeng/checkbox';
 import { CardModule } from 'primeng/card';
 import { CalendarModule } from "primeng/calendar";
+import { DialogModule } from 'primeng/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { SignaturePadModule } from 'angular2-signaturepad';
 
@@ -26,9 +28,7 @@ import { CardModuleComponent } from './card-module/card-module.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CalenderComponent } from './calender/calender.component';
 import { ReactiveFormsModule } from '@angular/forms';
-
-
-/* Application modules */
+/* Aplication modules */
 import { DashboardModule } from './dashboard/dashboard.module';
 import { MenuModuleComponent } from './menu-module/menu-module.component';
 import { QRcodeComponent } from './qrcode/qrcode.component';
@@ -37,7 +37,6 @@ import { ListeDesParticipantsComponent } from './liste-des-participants/liste-de
 import { SignatureComponent } from './signature/signature.component';
 import { InfoModuleComponent } from './info-module/info-module.component';
 import { ModaleDeconnexionComponent } from './modale-deconnexion/modale-deconnexion.component';
-import {DialogModule} from 'primeng/dialog';
 import { NavigationTabsModule } from './dashboard/navigation-tabs/navigation-tabs.module';
 
 @NgModule({
@@ -67,7 +66,9 @@ import { NavigationTabsModule } from './dashboard/navigation-tabs/navigation-tab
     AccordionModule,
     ReactiveFormsModule,
     DialogModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
+    DialogModule,
     CardModule,
     SignaturePadModule,
     CalendarModule,
