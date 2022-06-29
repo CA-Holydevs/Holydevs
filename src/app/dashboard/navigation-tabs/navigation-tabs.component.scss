@@ -1,0 +1,39 @@
+@import "/src/assets/scss/variables";
+
+:host ::ng-deep {
+    display: block;
+    background-color: $beige;
+
+    &.navigation-tabs {
+        padding: 4rem;
+
+        .p-tabview-nav {
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            background-color: $pale-turquoise-blue;
+            li {
+                .p-tabview-nav-link {
+                    // Tab background color
+                    background: $pale-turquoise-blue;
+                }
+                &:not(.p-highlight):not(.p-disabled){
+                    &:hover .p-tabview-nav-link {
+                        // Hovered tab BG, border and text color
+                        background: $pale-turquoise-blue;
+                        border-color: $blue;
+                        color: $white;
+                    }
+                }
+                &:not(.p-highlight) a {
+                    // Text color of unselected tab
+                    color: $white;
+                }
+                &.p-highlight a {
+                    // Text and border color of selected tab
+                    border-color: $blue;
+                    color: $blue;
+                }
+            }
+        }
+    }
+}

@@ -4,6 +4,7 @@ import { DataLogin } from '../login';
 import { NgForm } from '@angular/forms';
 import {  VERSION, ViewChild, ElementRef,  } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-connexion',
   templateUrl: './connexion.component.html',
@@ -17,7 +18,7 @@ export class ConnexionComponent implements OnInit {
   mail = new FormControl();
   password = new FormControl();
 
-  constructor(private _loginsService: LoginService) { }
+  constructor(private _loginsService: LoginService, private router: Router) { }
 
   ngOnInit(): void {
     this._loginsService.getLogins().subscribe(data => (this.logins = data));
@@ -37,6 +38,7 @@ export class ConnexionComponent implements OnInit {
     if(this.isInLogins(this.mail.value, this.password.value)){
       this.rightPassword = true;
       this.wrongPassword = false;
+      this.router.navigate(['/dashboard']);
     }else{
       this.rightPassword = false;
       this.wrongPassword = true;
