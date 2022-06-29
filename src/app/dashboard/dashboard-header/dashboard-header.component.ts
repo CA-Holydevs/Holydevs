@@ -1,4 +1,6 @@
 import { Component, HostBinding, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'dashboard-header',
@@ -7,9 +9,19 @@ import { Component, HostBinding, OnInit } from '@angular/core';
 })
 export class DashboardHeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private primengConfig: PrimeNGConfig, private router: Router) {}
 
-  ngOnInit(): void {
+    ngOnInit() {
+      this.primengConfig.ripple = true;
+    }
+    
+    displayModal: boolean = false;
+
+    showModalDialog() {
+      this.displayModal = true;
   }
 
+    deconnexion(){
+      this.router.navigate(['/connexion'])
+    }
 }

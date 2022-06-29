@@ -11,6 +11,8 @@ import { ButtonModule } from 'primeng/button';
 import { CheckboxModule } from 'primeng/checkbox';
 import { CardModule } from 'primeng/card';
 import { CalendarModule } from "primeng/calendar";
+import { DialogModule } from 'primeng/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 /* Aplication components */
@@ -22,7 +24,6 @@ import { CardParticipantComponent } from './card-participant/card-participant.co
 import { HttpClientModule } from '@angular/common/http';
 import { CalenderComponent } from './calender/calender.component';
 import { ReactiveFormsModule } from '@angular/forms';
-
 /* Aplication modules */
 import { DashboardModule } from './dashboard/dashboard.module';
 
@@ -44,7 +45,9 @@ import { DashboardModule } from './dashboard/dashboard.module';
     PanelModule,
     AccordionModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
+    DialogModule,
     CardModule,
     CalendarModule
   ],
