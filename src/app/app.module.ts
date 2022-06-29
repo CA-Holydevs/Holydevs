@@ -31,7 +31,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 /* Aplication modules */
 import { DashboardModule } from './dashboard/dashboard.module';
 import { MenuModuleComponent } from './menu-module/menu-module.component';
-import { QRcodeComponent } from './qrcode/qrcode.component';
 import { MenuSessionComponent } from './menu-session/menu-session.component';
 import { ListeDesParticipantsComponent } from './liste-des-participants/liste-des-participants.component';
 import { SignatureComponent } from './signature/signature.component';
@@ -50,7 +49,6 @@ import { NavigationTabsModule } from './dashboard/navigation-tabs/navigation-tab
     CardModuleComponent,
     CalenderComponent,
     MenuModuleComponent,
-    QRcodeComponent,
     MenuSessionComponent,
     ListeDesParticipantsComponent,
     SignatureComponent,
