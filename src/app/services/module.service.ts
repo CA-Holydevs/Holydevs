@@ -17,7 +17,6 @@ export class ModuleService {
       datas.forEach((data : any) => {
         const module = data as Module;
         this.updateFromJSON(module);
-        console.log(this._module);
       });
     })
   }
@@ -29,5 +28,12 @@ export class ModuleService {
     if(!existModule){
       this._module.set(newModule.name, newModule);
     }
+  }
+  public getModule(name: String):Module{  // Module
+    const module = this._module.get(name);
+    if(module === undefined){
+      return new Module;
+    }
+    return module;
   }
 }

@@ -1,0 +1,13 @@
+<div class="card" style="width: 18rem;">
+    <div class="listitle"> 
+        <h5 class="card-title">Liste des sessions </h5>
+    </div>
+    <div class="card-body">
+    <ul *ngFor="let session of this.sessionService._session | keyvalue ">
+        <div class="module-title">
+            <li class="card-text">{{session.value.name}}</li>
+        </div>
+    </ul>
+    </div>
+    <div class="planningtitle"> <h5 class="card-title">Planning general </h5></div>
+  </div>

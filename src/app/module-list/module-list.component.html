@@ -1,12 +1,12 @@
 <div *ngFor="let module of this.moduleService._module | keyvalue ">
-    <p-card>
+    <p-card [routerLink]="['/info-module', {name: module.key}]">
         <ng-template pTemplate="title">
             <div class="title">{{module.value.name}}</div>
         </ng-template>
         <hr>
         <ng-template pTemplate="content">
             <div class="center"><em>À {{module.value.place}}</em></div>
-            <p class="comment center"></p>
+            <p class="comment center">Durée : {{module.value.duration}}</p>
         </ng-template>
         <ng-template pTemplate="footer">
             <div class="flex">

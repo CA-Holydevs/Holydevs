@@ -6,6 +6,8 @@ import { TabViewModule } from 'primeng/tabview';
 import { DashboardHeaderComponent } from './dashboard-header/dashboard-header.component';
 import { DashboardComponent } from './dashboard.component';
 import { NavigationTabsComponent } from './navigation-tabs/navigation-tabs.component';
+import {DialogModule} from 'primeng/dialog';
+import {ButtonModule} from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { NavigationTabsComponent } from './navigation-tabs/navigation-tabs.compo
   ],
   imports: [
     HttpClientModule,
+    DialogModule,
+    ButtonModule,
     TabViewModule
   ],
   providers: [],

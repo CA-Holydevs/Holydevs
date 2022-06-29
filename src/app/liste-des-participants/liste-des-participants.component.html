@@ -1,0 +1,25 @@
+<div class="liste">
+    <div class="nom-liste-des-participants"><strong>Liste des participants</strong>
+        <button class="mail" (click)="mail(content)">Mail</button>
+        <button class="absent" (click)="absent(content2)">Absent</button></div>
+    <div class="container">
+        <ul>
+            <li *ngFor="let student of studentsList">
+                <span class="eleve">{{ student.name }}</span>
+                <span class="signature">{{ student.signature }}</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<ng-template #content let-modal>
+    <div class="modal-body">
+        <div class="envoie-mail">Envoyer un mail à</div>
+    </div>
+</ng-template>
+
+<ng-template #content2 let-modal>
+    <div class="modal-body">
+        <div class="mettre-absent">Mettre absent:</div>
+    </div>
+</ng-template>

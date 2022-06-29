@@ -1,0 +1,23 @@
+<div class="info">
+    <div class="nom-info-module"><strong>{{module.name}}</strong></div>
+    <div class="container">
+        <div>
+            <strong>Lieu : {{module.place}}</strong><br>
+            <strong>Date Debut : {{module.startDate}}</strong><br>
+            <strong>Date Fin: {{module.endDate}}</strong><br>
+            <strong>Durée totale : {{module.duration}}</strong>
+        </div>
+        <div class="intervenant">
+            <div>
+                <strong>Intervenant(s)</strong>
+            </div>
+            <div>
+                <ul>
+                    <li *ngFor="let intervenant of intervenants">
+                        <span>{{ intervenant.name }}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

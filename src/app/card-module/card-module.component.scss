@@ -6,6 +6,7 @@ p-card{
     width: 90%;
     padding: 0;
     border: 1px solid $beige;
+    border-radius: 5px;
     .title{
         text-align: center;
         margin:0;
@@ -14,24 +15,24 @@ p-card{
         padding: 0.5em 0;
         font-size: 1.2rem;
     }
-    p, div, em{
-        text-align: center;
+    .in-progress {
+        background: $green;
     }
-    .valid {
-        border:2px solid $green;
+    .close {
+        background: $red;
     }
-    .absent {
-        border:2px solid $red;
+    .coming {
+        background: $yellow;
     }
-    .waiting {
-        border:2px solid $yellow;
-    }
-    
     .flex{
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
     }
-    img{
-        padding: 1.5em; 
-        max-width: 80%;
+    aside p{
+        padding: 0.5em;
+        border-radius: 10px;
+    }
+    p{
+        margin: 0;
     }
 }

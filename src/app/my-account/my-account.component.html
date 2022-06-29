@@ -1,0 +1,48 @@
+
+<form header="Profile">
+    <h5>Mon Profil</h5>
+    <div class="border-form">
+        <div class="form-group row">
+            <label for="firstname" class="col-sm-3 col-form-label"><strong>Prénom</strong></label>
+            <div class="col-sm-9">
+            <input id="firstname" type="text" class="form-control" formControlName="firstname" value="Test"/>
+            </div>
+        </div>
+        <hr/>
+
+        <div class="form-group row">
+            <label for="lastname" class="col-sm-3 col-form-label"><strong>Nom</strong></label>
+            <div class="col-sm-9">
+            <input id="lastname" type="text" class="form-control" formControlName="lastname" value="TEST"/>
+            </div>
+        </div>
+        <hr/>
+
+        <div class="form-group row">
+            <label for="email" class="col-sm-3 col-form-label"><strong>Email</strong></label>
+            <div class="col-sm-9">
+            <input id="email" type="text" class="form-control" formControlName="email" value="test@test.com"/>
+            </div>
+        </div>
+        <hr/>
+
+        <div class="form-group row">
+            <label for="tel" class="col-sm-3 col-form-label"><strong>Téléphone</strong></label>
+            <div class="col-sm-9">
+            <input id="tel" type="text" class="form-control" formControlName="tel" value="0101010101"/>
+            </div>
+        </div>
+        <hr/>
+
+            
+        <div class="form-group row">
+            <label for="password" class="col-sm-3 col-form-label"><strong>Mot de passe</strong></label>
+            <div class="col-sm-9">
+            <input id="password" type="password" class="form-control" formControlName="password" value="test010101"/>
+            </div>
+        </div>
+        <hr/>
+        <h6>{{ msg }}</h6>
+        <button (click)="validation()" pButton pRipple label="Valider les modifications" icon="pi pi-user">Valider</button>
+    </div>
+</form>

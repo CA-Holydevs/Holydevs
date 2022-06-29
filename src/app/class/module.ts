@@ -3,14 +3,16 @@ export class Module {
     private _place: String;
     private _startDate: Date;
     private _endDate: Date;
+    private _duration: String;
     private _intervenantList: {}[];
     private _participantList: {}[];
 
-    constructor(name = "", place = "", startDate = new Date(), endDate = new Date(), intervenantList = [{}], participantList = [{}]) {
+    constructor(name = "", place = "", startDate = new Date(), endDate = new Date(), duration = "", intervenantList = [{}], participantList = [{}]) {
         this._name = name;
         this._place = place;
         this._startDate = startDate;
         this._endDate = endDate;
+        this._duration = duration;
         this._intervenantList = intervenantList;
         this._participantList = participantList;
     }
@@ -20,6 +22,7 @@ export class Module {
         this._place = module.place;
         this._startDate = module.startDate;
         this._endDate = module.endDate;
+        this._duration = module.duration;
         this._intervenantList = module.intervenantList;
         this._participantList = module.participantList;
     }
@@ -54,6 +57,14 @@ export class Module {
 
     set endDate(value: Date) {
         this._endDate = value;
+    }
+
+    get duration(): String {
+        return this._duration;
+    }
+
+    set duration(value: String) {
+        this._duration = value;
     }
 
     get intervenantList(): {}[] {

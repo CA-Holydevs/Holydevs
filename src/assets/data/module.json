@@ -4,6 +4,34 @@
         "place": "Paris",
         "startDate": "2017-01-01",
         "endDate": "2017-01-02",
+        "duration": "2h",
+        "intervenantList": [
+            {
+                "name": "Jean-Pierre",
+                "role": "Intervenant"
+            },
+            {
+                "name": "Jean-Luc",
+                "role": "Intervenant"
+            }
+        ],
+        "participantList": [
+            {
+                "name": "Jeanne",
+                "role": "Participant"
+            },
+            {
+                "name": "Jean-Jacques",
+                "role": "Participant"
+            }
+        ]
+    },
+    {
+        "name": "Framework React",
+        "place": "Marseille",
+        "startDate": "2017-01-01",
+        "endDate": "2017-01-02",
+        "duration": "5h",
         "intervenantList": [
             {
                 "name": "Jean-Pierre",
@@ -30,6 +58,7 @@
         "place": "Aix-en-Provence",
         "startDate": "2017-01-01",
         "endDate": "2017-01-02",
+        "duration": "20h",
         "intervenantList": [
             {
                 "name": "Jean-Pierre",
@@ -56,6 +85,7 @@
         "place": "Marseille",
         "startDate": "2017-01-01",
         "endDate": "2017-01-02",
+        "duration": "4h",
         "intervenantList": [
             {
                 "name": "Jean-Pierre",
@@ -77,4 +107,5 @@
             }
         ]
     }
+    
 ]

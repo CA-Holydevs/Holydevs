@@ -1,0 +1,58 @@
+.listitle {
+	background-color: #3F93D2;
+	min-height: 62px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	color: white;
+	&::before {
+		content: "";
+		width: 20px;
+		height: 20px;
+		transition: .5s;
+		color: white;
+		float: left;
+		box-shadow: -2px 2px 0 white;
+		transform: rotate(45deg);
+        
+        
+    }
+	}
+
+.card {
+	height: 100%;
+}
+.card-title {
+	text-align: left;
+}
+.card-text {
+	text-align: left;
+	display: flex;
+	align-content: left;
+	align-items: center;
+    margin-left: 25px;
+    justify-content: left;
+	&::before {
+		content: '';
+		position: absolute;
+        left: 5%;
+		width: 40px;
+		height: 40px;
+		border-radius: 20px;
+		background: #FF8E51;
+		margin-right: 40px;
+	}
+}
+.planningtitle {
+	background-color: #FF8E51;
+	min-height: 62px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	color: white;
+}
+.module-title {
+margin-bottom: 25px;
+}

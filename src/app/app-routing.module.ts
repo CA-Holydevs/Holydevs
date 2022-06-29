@@ -8,8 +8,19 @@ import { CardParticipantComponent } from './card-participant/card-participant.co
 import { CalenderComponent } from './calender/calender.component';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { MenuModuleComponent } from './menu-module/menu-module.component';
+import { InfoModuleComponent } from './info-module/info-module.component'
+import { CardModuleComponent } from './card-module/card-module.component';
+import { MyAccountComponent } from './my-account/my-account.component';
+import { QRcodeComponent } from './qrcode/qrcode.component';
+import { MenuSessionComponent } from './menu-session/menu-session.component';
+import { ListeDesParticipantsComponent } from './liste-des-participants/liste-des-participants.component';
+import { SignatureComponent } from './signature/signature.component';
 
 const routes: Routes = [
+  { path: 'my-account',
+    component: MyAccountComponent
+  },
   { path: 'connexion',
     component: ConnexionComponent
   },
@@ -22,11 +33,23 @@ const routes: Routes = [
   { path: 'card-participant',
     component: CardParticipantComponent //TODO: Remove this route
   },
+  { path: 'card-module',
+    component: CardModuleComponent //TODO: Remove this route
+  },
   { path: 'calender',
     component: CalenderComponent  //TODO: Remove this route
   },
+  { path: 'signature',
+    component: SignatureComponent  //TODO: Remove this route
+  },
   { path: 'struct-principale',
     component: StructPrincipaleComponent
+  },
+  { path: 'menu-module',
+    component: MenuModuleComponent
+  },
+  { path: 'menu-session',
+    component: MenuSessionComponent
   },
   { path: 'dashboard',
     component: DashboardComponent,
@@ -35,6 +58,18 @@ const routes: Routes = [
     //   {path: 'module'},
     //   {path: 'qrcode'},
     // ]
+  },
+  {
+    path: 'info-module',
+    component: InfoModuleComponent
+  },
+  {
+    path: 'qrcode',
+    component: QRcodeComponent
+  },
+  {
+    path: 'liste-des-participants',
+    component: ListeDesParticipantsComponent
   },
   { path: '',   redirectTo: '/connexion', pathMatch: 'full' },
   { path: '**', component:  ConnexionComponent},

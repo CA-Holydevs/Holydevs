@@ -19,7 +19,6 @@ export class ModuleListComponent implements OnInit {
 
   ngOnInit(): void {
     const modules = this.moduleService._module;
-    console.log("Iciiiiiiiiiiiiiiiiiiiiiiii", modules);
   }
   
 

@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem;">
+    <div class="listitle"> <h5 class="card-title">Liste des modules </h5></div>
+    <div class="card-body">
+    <ul *ngFor="let module of this.moduleService._module | keyvalue ">
+        <div class="module-title"><li class="card-text">{{module.value.name}}</li></div>
+    </ul>
+    </div>
+    <div class="planningtitle"> <h5 class="card-title">Planning general </h5></div>
+  </div>

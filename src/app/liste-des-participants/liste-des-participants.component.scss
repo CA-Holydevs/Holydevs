@@ -1,0 +1,66 @@
+@import "/src/assets/scss/variables";
+
+.liste {
+    margin: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 9px 7px;
+    border: 0px solid $blue;
+    border-radius: 10px;
+}
+
+.nom-liste-des-participants{
+    border: 1px solid $blue;
+    border-top: 10px;
+    background-color: $blue;
+    color: $white;
+    text-align: center;
+    font-size: 25px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 5px;
+}
+
+.container{
+    padding: 10px;
+}
+
+.mail, .absent{
+    border-radius: 20px;
+    color: $white;
+    border-style : none;
+}
+
+.mail{
+    background-color: $yellow;
+    width: 70px;
+}
+
+.absent{
+    background-color: $red;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(197, 196, 196);
+}
+
+.eleve{
+    color: rgb(197, 196, 196);
+    padding: 15px;
+    font-size: 20px;
+}
+
+.signature{
+    color: rgb(197, 196, 196);
+    padding: 15px;
+}
+
+.modal-body{
+    background-color: $pale-turquoise-blue;
+    border:0px solid black;
+    border-radius: 5px;
+}

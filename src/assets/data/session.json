@@ -1,0 +1,35 @@
+[
+    {
+        "id": "1",
+        "name": "Sécurité"
+    },
+    {
+        "id": "2",
+        "name": "Santé"
+    },
+    {
+        "id": "3",
+        "name": "Environnement"
+    },
+    {
+        "id": "4",
+        "name": "Economie"
+    },
+    {
+        "id": "5",
+        "name": "Comptabilité"
+    },
+    {
+        "id": "6",
+        "name": "Développement durable"
+    },
+    {
+        "id": "7",
+        "name": "Droit"
+    },
+    {
+        "id": "8",
+        "name": "Informatique"
+    }
+
+]
