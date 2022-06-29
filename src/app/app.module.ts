@@ -13,7 +13,7 @@ import { CardModule } from 'primeng/card';
 import { CalendarModule } from "primeng/calendar";
 
 
-/* Aplication modules */
+/* Aplication components */
 import { ConnexionComponent } from './connexion/connexion.component';
 import { ModuleListComponent } from './module-list/module-list.component';
 import { FirstConnexionComponent } from './first-connexion/first-connexion.component';
@@ -23,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { CalenderComponent } from './calender/calender.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
-
+/* Aplication modules */
+import { DashboardModule } from './dashboard/dashboard.module';
 
 @NgModule({
   declarations: [

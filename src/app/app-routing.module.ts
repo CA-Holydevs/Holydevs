@@ -6,6 +6,8 @@ import {FirstConnexionComponent} from   './first-connexion/first-connexion.compo
 import { StructPrincipaleComponent } from './struct-principale/struct-principale.component';
 import { CardParticipantComponent } from './card-participant/card-participant.component';
 import { CalenderComponent } from './calender/calender.component';
+import { DashboardModule } from './dashboard/dashboard.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   { path: 'connexion',
@@ -25,6 +27,14 @@ const routes: Routes = [
   },
   { path: 'struct-principale',
     component: StructPrincipaleComponent
+  },
+  { path: 'dashboard',
+    component: DashboardComponent,
+    // children : [
+    //   {path: 'profile'},
+    //   {path: 'module'},
+    //   {path: 'qrcode'},
+    // ]
   },
   { path: '',   redirectTo: '/connexion', pathMatch: 'full' },
   { path: '**', component:  ConnexionComponent},

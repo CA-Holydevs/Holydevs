@@ -1,0 +1,43 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "/src/assets/scss/variables";
+
+:host ::ng-deep {
+    display: block;
+    height: 80px;
+
+    &.dashboard-header {
+        background-color: lightgray;
+        height: 80px;
+        position: fixed;
+        width: 100%;
+
+        .logo {
+            margin-top: 1.4rem;
+            margin-left: 1.4rem;
+            width: 134px;
+        }
+
+        .header-buton {
+            border: none;
+            background: transparent;
+            height: 44px;
+            position: absolute;
+            top: 1.2rem;
+            right: 0.65em;
+            width: 44px;
+
+            &.buton-profile {
+                right: 5em;
+                &::before {
+                    color: $blue;
+                    font-size: 2rem;
+                }
+            }
+
+            &.buton-disconnect::before {
+                color: red;
+                font-size: 2rem;
+            }
+        }
+    }
+}
