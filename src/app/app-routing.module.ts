@@ -11,7 +11,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MenuModuleComponent } from './menu-module/menu-module.component';
 import { InfoModuleComponent } from './info-module/info-module.component'
 import { CardModuleComponent } from './card-module/card-module.component';
-import { MyAccountComponent } from './my-account/my-account.component';
+import { MyAccountComponent } from './dashboard/my-account/my-account.component';
 import { MenuSessionComponent } from './menu-session/menu-session.component';
 import { ListeDesParticipantsComponent } from './liste-des-participants/liste-des-participants.component';
 import { SignatureComponent } from './signature/signature.component';

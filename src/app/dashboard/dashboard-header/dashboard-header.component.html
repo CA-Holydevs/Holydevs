@@ -1,8 +1,11 @@
 <div class="dashboard-header">
     <img src="./assets/logo/form.dev-logo.png" title="form.dev logo" class="logo"/>
-    <button class="bi bi-person-fill header-buton buton-profile"></button>
+    <button (click)="showProfile()" class="bi bi-person-fill header-buton buton-profile"></button>
     <button (click)="showModalDialog()" class="bi bi-power header-buton buton-disconnect"></button>
 </div>
+<p-dialog class="profile-modal" [showHeader]="false" [closeOnEscape]="true" [contentStyle]="{padding: 0}" [(visible)]="displayProfile" [modal]="true" [style]="{width: '50vw'}" [draggable]="false" [resizable]="false">
+    <dashboard-my-account></dashboard-my-account>
+</p-dialog>
 <p-dialog header="Déconnexion" [(visible)]="displayModal" [modal]="true" [style]="{width: '25vw'}" [baseZIndex]="100"
     [draggable]="false" [resizable]="false">
     <p class="p-m-0">Êtes-vous sur de vouloir vous déconnecter ?</p>

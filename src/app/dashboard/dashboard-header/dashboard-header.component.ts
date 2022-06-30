@@ -11,14 +11,19 @@ export class DashboardHeaderComponent implements OnInit {
 
   constructor(private primengConfig: PrimeNGConfig, private router: Router) {}
 
-    ngOnInit() {
-      this.primengConfig.ripple = true;
-    }
-    
-    displayModal: boolean = false;
+  ngOnInit() {
+    this.primengConfig.ripple = true;
+  }
+  
+  displayModal: boolean = false;
+  displayProfile: boolean = false;
 
-    showModalDialog() {
+  showModalDialog() {
       this.displayModal = true;
+  }
+
+  showProfile() {
+    this.displayProfile = true;
   }
 
   deconnexion(){

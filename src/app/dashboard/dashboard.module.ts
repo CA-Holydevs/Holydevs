@@ -12,12 +12,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { QRcodeComponent } from './qrcode/qrcode.component';
+import { MyAccountComponent } from './my-account/my-account.component';
 
 @NgModule({
   declarations: [
     DashboardComponent,
     DashboardHeaderComponent,
     QRcodeComponent,
+    MyAccountComponent,
     NavigationTabsComponent
   ],
   imports: [
