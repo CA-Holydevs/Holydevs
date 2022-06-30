@@ -113,6 +113,7 @@ button{
     justify-content: space-between;
     button.clear{
         background-color: $beige;
+        margin-right: 10px;
     }
     button.send{
         background-color: $green;
@@ -129,8 +130,6 @@ button{
     align-items: center;
 }
 
-.p-dialog{
-    .p-dialog-header-close{
-        color: $red;
-    }
+span#pr_id_1-label{
+    text-align: center;
 }

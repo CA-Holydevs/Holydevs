@@ -12,6 +12,18 @@
         width: 100%;
         z-index: 10;
 
+        .disconnect-warning {
+            color: $white;
+            position: relative;
+            top: 1.8rem;
+            background: orange;
+            padding: 0.6rem;
+            text-align: center;
+            span::before {
+                margin-right: 0.5rem;
+            }
+        }
+
         .logo {
             margin-top: 1.4rem;
             margin-left: 1.4rem;

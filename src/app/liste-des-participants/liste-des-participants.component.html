@@ -42,14 +42,17 @@
     </div>
 </ng-template>
 
-<p-dialog header="{{ studentName }}" [(visible)]="displayModal" [modal]="true" [style]="{width: '50vw'}" [baseZIndex]="10000"
+<p-dialog header="{{ studentName }}" [(visible)]="displayModal" [modal]="true" [style]="{width: '50vw'}" [baseZIndex]="10"
 [draggable]="false" [resizable]="false" [closeAriaLabel]="'close'">
     <div class="signature-container">
         <signature-pad [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()"></signature-pad>
     </div>
 
     <div class="buttonsPad">
-        <button class="clear" (click)="clearSignature()">Effacer</button>
-        <button class="send" (click)="savePad(studentId)">Envoyer</button>
+        <button (click)="closeDialog()">Fermer</button>
+        <div>
+            <button class="clear" (click)="clearSignature()">Effacer</button>
+            <button class="send" (click)="savePad(studentId)">Envoyer</button>
+        </div>
     </div>
 </p-dialog>

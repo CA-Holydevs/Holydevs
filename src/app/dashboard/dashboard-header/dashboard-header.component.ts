@@ -17,6 +17,7 @@ export class DashboardHeaderComponent implements OnInit {
   
   displayModal: boolean = false;
   displayProfile: boolean = false;
+  isDisconnected: boolean = false;
 
   showModalDialog() {
       this.displayModal = true;

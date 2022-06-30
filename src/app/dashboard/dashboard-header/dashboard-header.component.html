@@ -2,6 +2,7 @@
     <img src="./assets/logo/form.dev-logo.png" title="form.dev logo" class="logo"/>
     <button (click)="showProfile()" class="bi bi-person-fill header-buton buton-profile"></button>
     <button (click)="showModalDialog()" class="bi bi-power header-buton buton-disconnect"></button>
+    <div class="disconnect-warning" *ngIf="isDisconnected"><span class="bi bi-exclamation-triangle-fill">Attention ! Vous êtes actuellement en mode déconnecté !</span></div>
 </div>
 <p-dialog class="profile-modal" [showHeader]="false" [closeOnEscape]="true" [contentStyle]="{padding: 0}" [(visible)]="displayProfile" [modal]="true" [style]="{width: '50vw'}" [draggable]="false" [resizable]="false" >
     <dashboard-my-account></dashboard-my-account>

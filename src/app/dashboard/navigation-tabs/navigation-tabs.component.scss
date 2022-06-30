@@ -17,6 +17,12 @@
                     // Tab background color
                     background: $blue;
                 }
+                .p-tabview-nav-link{
+                    border: none;
+                }
+                .p-tabview-nav-link:not(.p-disabled):focus{
+                    box-shadow: none;
+                }
                 &:not(.p-highlight):not(.p-disabled){
                     &:hover .p-tabview-nav-link {
                         // Hovered tab BG, border and text color

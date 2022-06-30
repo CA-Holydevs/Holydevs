@@ -7,6 +7,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigation-tabs.component.scss']
 })
 export class NavigationTabsComponent {
-  tabTitle1: string = "Header 1";
-  tabTitle2: string[] = ["Header 2", "Header 3"];
+  tabTitle1: string = "Information";
+  tabTitle2: string[] = ["Tableau de bord", "Planning"];
 }

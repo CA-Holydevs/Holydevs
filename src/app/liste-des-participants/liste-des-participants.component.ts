@@ -19,8 +19,12 @@ export class ListeDesParticipantsComponent implements OnInit {
   @ViewChild(SignaturePad) signaturePad!: SignaturePad;
   signaturePadOptions: Object = { 
     'minWidth': 2,
-    'canvasWidth': 500,
-    'canvasHeight': 300
+    'canvasWidth': 430,
+    'canvasHeight': 300,
+    'canvasStyle': {
+      'border': '1px solid red',
+      'borderRadius': '5px'
+    }
   };
 
   studentsList = [
@@ -67,6 +71,10 @@ export class ListeDesParticipantsComponent implements OnInit {
     this.displayModal = true;
     this.studentName = name;
     this.studentId = id-1;
+  }
+  closeDialog() {
+    this.displayModal = false;
+    this.clearSignature();
   }
 
   ngAfterViewInit() {

@@ -1,14 +1,11 @@
 @import "/src/assets/scss/variables";
 
-html{
-    background-color: $beige;
-}
-
 .info {
     margin: 25px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 9px 7px;
     border: 0px solid $blue;
     border-radius: 10px;
+    background: $white;
 }
 
 .nom-info-module{

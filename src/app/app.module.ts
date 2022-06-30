@@ -55,7 +55,6 @@ import { NavigationTabsModule } from './dashboard/navigation-tabs/navigation-tab
     AppRoutingModule,
     DialogModule,
     SignaturePadModule,
-    CalendarModule,
     CommonModule,
     NavigationTabsModule
   ],
