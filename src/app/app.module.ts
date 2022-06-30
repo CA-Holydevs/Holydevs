@@ -30,6 +30,8 @@ import { SignatureComponent } from './signature/signature.component';
 import { InfoModuleComponent } from './info-module/info-module.component';
 import { ModaleDeconnexionComponent } from './modale-deconnexion/modale-deconnexion.component';
 import { NavigationTabsModule } from './dashboard/navigation-tabs/navigation-tabs.module';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
 
 @NgModule({
   declarations: [
@@ -56,7 +58,11 @@ import { NavigationTabsModule } from './dashboard/navigation-tabs/navigation-tab
     DialogModule,
     SignaturePadModule,
     CommonModule,
-    NavigationTabsModule
+    NavigationTabsModule,
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory
+  }),
   ],
   bootstrap: [AppComponent],
 })

@@ -9,7 +9,6 @@ import { DashboardComponent } from './dashboard.component';
 import { NavigationTabsComponent } from './navigation-tabs/navigation-tabs.component';
 import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { QRcodeComponent } from './qrcode/qrcode.component';
@@ -22,7 +21,8 @@ import { CardParticipantComponent } from '../card-participant/card-participant.c
 import { CardModuleComponent } from '../card-module/card-module.component';
 import { CalenderComponent } from '../calender/calender.component';
 
-import { CalendarModule, DateAdapter} from 'angular-calendar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 
 @NgModule({
@@ -52,8 +52,8 @@ import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
     BrowserAnimationsModule,
     CalendarModule.forRoot({
       provide: DateAdapter,
-      useFactory: adapterFactory,
-    })
+      useFactory: adapterFactory
+  }),
   ],
   providers: [ ],
   bootstrap: [ DashboardComponent ]
