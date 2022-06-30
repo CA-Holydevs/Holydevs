@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 
 import { HttpClientModule } from '@angular/common/http';
 import { TabViewModule } from 'primeng/tabview';
+import { RouterModule } from '@angular/router';
 
 import { DashboardHeaderComponent } from './dashboard-header/dashboard-header.component';
 import { DashboardComponent } from './dashboard.component';
@@ -15,6 +16,10 @@ import { QRcodeComponent } from './qrcode/qrcode.component';
 import { MyAccountComponent } from './my-account/my-account.component';
 import { MenuModuleComponent } from './menu-module/menu-module.component';
 import { MenuSessionComponent } from './menu-session/menu-session.component';
+import { ModuleListComponent } from '../module-list/module-list.component';
+import { CardModule } from 'primeng/card';
+import { CardParticipantComponent } from '../card-participant/card-participant.component';
+import { CardModuleComponent } from '../card-module/card-module.component';
 
 @NgModule({
   declarations: [
@@ -24,15 +29,20 @@ import { MenuSessionComponent } from './menu-session/menu-session.component';
     MyAccountComponent,
     MenuModuleComponent,
     MenuSessionComponent,
+    ModuleListComponent,
+    CardParticipantComponent,
+    CardModuleComponent,
     NavigationTabsComponent
   ],
   imports: [
     HttpClientModule,
     DialogModule,
     BrowserModule,
+    RouterModule,
     ButtonModule,
     BrowserAnimationsModule,
     NoopAnimationsModule,
+    CardModule,
     TabViewModule
   ],
   providers: [],

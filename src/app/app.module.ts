@@ -10,7 +10,6 @@ import { AccordionModule } from 'primeng/accordion';
 import { PanelModule } from 'primeng/panel';
 import { ButtonModule } from 'primeng/button';
 import { CheckboxModule } from 'primeng/checkbox';
-import { CardModule } from 'primeng/card';
 import { CalendarModule } from "primeng/calendar";
 import { DialogModule } from 'primeng/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -20,10 +19,8 @@ import { SignaturePadModule } from 'angular2-signaturepad';
 
 /* Aplication components */
 import { ConnexionComponent } from './connexion/connexion.component';
-import { ModuleListComponent } from './module-list/module-list.component';
 import { FirstConnexionComponent } from './first-connexion/first-connexion.component';
 import { SocialLinksComponent } from './social-links/social-links.component';
-import { CardParticipantComponent } from './card-participant/card-participant.component';
 import { CardModuleComponent } from './card-module/card-module.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CalenderComponent } from './calender/calender.component';
@@ -40,11 +37,8 @@ import { NavigationTabsModule } from './dashboard/navigation-tabs/navigation-tab
   declarations: [
     AppComponent,
     ConnexionComponent,
-    ModuleListComponent,
     FirstConnexionComponent,
     SocialLinksComponent,
-    CardParticipantComponent,
-    CardModuleComponent,
     CalenderComponent,
     ListeDesParticipantsComponent,
     SignatureComponent,
@@ -63,7 +57,6 @@ import { NavigationTabsModule } from './dashboard/navigation-tabs/navigation-tab
     BrowserAnimationsModule,
     AppRoutingModule,
     DialogModule,
-    CardModule,
     SignaturePadModule,
     CalendarModule,
     CommonModule,
