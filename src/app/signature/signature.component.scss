@@ -1,0 +1,18 @@
+@import "/src/assets/scss/variables";
+
+button{
+    max-width: 20rem;
+    background-color: $green;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 0.5rem 1rem;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    button.clear{
+        background-color: $light-blue;
+    }    
+}

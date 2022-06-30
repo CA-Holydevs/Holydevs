@@ -3,11 +3,11 @@
     <button (click)="showProfile()" class="bi bi-person-fill header-buton buton-profile"></button>
     <button (click)="showModalDialog()" class="bi bi-power header-buton buton-disconnect"></button>
 </div>
-<p-dialog class="profile-modal" [showHeader]="false" [closeOnEscape]="true" [contentStyle]="{padding: 0}" [(visible)]="displayProfile" [modal]="true" [style]="{width: '50vw'}" [draggable]="false" [resizable]="false">
+<p-dialog class="profile-modal" [showHeader]="false" [closeOnEscape]="true" [contentStyle]="{padding: 0}" [(visible)]="displayProfile" [modal]="true" [style]="{width: '50vw'}" [draggable]="false" [resizable]="false" >
     <dashboard-my-account></dashboard-my-account>
 </p-dialog>
 <p-dialog header="Déconnexion" [(visible)]="displayModal" [modal]="true" [style]="{width: '25vw'}" [baseZIndex]="100"
-    [draggable]="false" [resizable]="false">
+    [draggable]="false" [resizable]="false" [dismissableMask]="true" [closable]="true">
     <p class="p-m-0">Êtes-vous sur de vouloir vous déconnecter ?</p>
         <ng-template pTemplate="footer">
             <p-button icon="bi bi-check2" (click)="deconnexion()" label="Oui" class="p-button-text"></p-button>

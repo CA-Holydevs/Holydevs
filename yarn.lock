@@ -1981,7 +1981,7 @@ angular-resizable-element@^5.0.0:
 
 angular2-signaturepad@^3.0.4:
   version "3.0.4"
-  resolved "https://registry.npmjs.org/angular2-signaturepad/-/angular2-signaturepad-3.0.4.tgz"
+  resolved "https://registry.yarnpkg.com/angular2-signaturepad/-/angular2-signaturepad-3.0.4.tgz#d013744eba51c7710756dc5b0d7071d9044ae026"
   integrity sha512-KRWlFIU77V8NiiAWYDNU7egfBJmvczr3qVjpw6m3KsT125WPwtBBzmD+/IJwRTWa5mUgykBEFYrsesKWolAXsQ==
   dependencies:
     signature_pad "2.3.2"

@@ -20,6 +20,10 @@ import { ModuleListComponent } from '../module-list/module-list.component';
 import { CardModule } from 'primeng/card';
 import { CardParticipantComponent } from '../card-participant/card-participant.component';
 import { CardModuleComponent } from '../card-module/card-module.component';
+import { CalenderComponent } from '../calender/calender.component';
+
+import { CalendarModule, DateAdapter} from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 
 @NgModule({
   declarations: [
@@ -30,6 +34,7 @@ import { CardModuleComponent } from '../card-module/card-module.component';
     MenuModuleComponent,
     MenuSessionComponent,
     ModuleListComponent,
+    CalenderComponent,
     CardParticipantComponent,
     CardModuleComponent,
     NavigationTabsComponent
@@ -43,7 +48,12 @@ import { CardModuleComponent } from '../card-module/card-module.component';
     BrowserAnimationsModule,
     NoopAnimationsModule,
     CardModule,
-    TabViewModule
+    TabViewModule,
+    BrowserAnimationsModule,
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory,
+    })
   ],
   providers: [],
   bootstrap: [ DashboardComponent ]
