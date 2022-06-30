@@ -1,2 +1,13 @@
 <dashboard-header></dashboard-header>
-<dashboard-navigation-tabs></dashboard-navigation-tabs>
+<div class="dashboard-main">
+    <div *ngIf="displaySessions" class="dashboard-sessions">
+        <dashboard-menu-session></dashboard-menu-session>
+    </div>
+    <div *ngIf="!displaySessions" class="dashboard-modules">
+        <dashboard-menu-module></dashboard-menu-module>
+    </div>
+    <div class="dashboard-navigation">
+        <dashboard-navigation-tabs></dashboard-navigation-tabs>
+    </div>
+</div>
+<dashboard-qrcode></dashboard-qrcode>

@@ -3,19 +3,19 @@ import { RouterModule, Routes } from '@angular/router';
 import {ConnexionComponent} from './connexion/connexion.component';
 import {ModuleListComponent} from './module-list/module-list.component';
 import {FirstConnexionComponent} from   './first-connexion/first-connexion.component';
-import { StructPrincipaleComponent } from './struct-principale/struct-principale.component';
+import { SocialLinksComponent } from './social-links/social-links.component';
 import { CardParticipantComponent } from './card-participant/card-participant.component';
 import { CalenderComponent } from './calender/calender.component';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { MenuModuleComponent } from './menu-module/menu-module.component';
+import { MenuModuleComponent } from './dashboard/menu-module/menu-module.component';
+import { MenuSessionComponent } from './dashboard/menu-session/menu-session.component';
 import { InfoModuleComponent } from './info-module/info-module.component'
 import { CardModuleComponent } from './card-module/card-module.component';
-import { MyAccountComponent } from './my-account/my-account.component';
-import { QRcodeComponent } from './qrcode/qrcode.component';
-import { MenuSessionComponent } from './menu-session/menu-session.component';
+import { MyAccountComponent } from './dashboard/my-account/my-account.component';
 import { ListeDesParticipantsComponent } from './liste-des-participants/liste-des-participants.component';
 import { SignatureComponent } from './signature/signature.component';
+import { QRcodeComponent } from './dashboard/qrcode/qrcode.component';
 
 const routes: Routes = [
   { path: 'my-account',
@@ -42,8 +42,8 @@ const routes: Routes = [
   { path: 'signature',
     component: SignatureComponent  //TODO: Remove this route
   },
-  { path: 'struct-principale',
-    component: StructPrincipaleComponent
+  { path: 'social-links',
+    component: SocialLinksComponent
   },
   { path: 'menu-module',
     component: MenuModuleComponent

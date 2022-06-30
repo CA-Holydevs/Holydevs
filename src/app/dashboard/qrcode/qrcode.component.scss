@@ -1,0 +1,24 @@
+@import "/src/assets/scss/variables";
+
+.button-modal-qr {
+    background: url(/assets/QR.svg) no-repeat center center;
+    background-color: $blue;
+    background-size: contain;
+    background-origin: content-box;
+    cursor: pointer;
+    border: 2px solid $blue;    // Adding borders let's us simulate padding
+    border-radius: 50px;
+    bottom: 4rem;
+    display: inline-block;
+    height: 64px;
+    padding: .8rem;
+    position: fixed;
+    right: 4rem;
+    width: 64px;
+}
+.qrcode {
+    padding: 1rem;
+    img {
+        max-width: 100%;
+    }
+}

@@ -1,17 +1,9 @@
-<div *ngFor="let module of this.moduleService._module | keyvalue ">
-    <p-card [routerLink]="['/info-module', {name: module.key}]">
-        <ng-template pTemplate="title">
-            <div class="title">{{module.value.name}}</div>
-        </ng-template>
-        <hr>
-        <ng-template pTemplate="content">
-            <div class="center"><em>À {{module.value.place}}</em></div>
-            <p class="comment center">Durée : {{module.value.duration}}</p>
-        </ng-template>
-        <ng-template pTemplate="footer">
-            <div class="flex">
-                <img class="valid center" alt="Signature" src="assets/showcase/images/usercard.png">
-            </div>
-        </ng-template>
-    </p-card>
+<div class="dashboard-modules-cards">
+    <div *ngFor="let module of this.moduleService._module | keyvalue ">
+        <app-card-module 
+        [cardTitle]="module.value.name"
+        [cardDuration]="module.value.duration"
+        [moduleKey]="module.key"
+        ></app-card-module>
+    </div>
 </div>

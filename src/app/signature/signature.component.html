@@ -1,12 +1,19 @@
-<div class="signature-container">
-    <signature-pad [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()"></signature-pad>
-</div>
-
-<div class="buttons">
-    <button (click)="clearSignature()">Clear signature pad</button>
-    <button (click)="savePad()">Save signature</button>
-</div>
 
 <div class="signature-image" *ngIf="signatureImg">
     <img src='{{ signatureImg }}' />
 </div>
+
+<p-dialog header="Elève 1" [(visible)]="display" [modal]="true" [style]="{width: '50vw'}" [baseZIndex]="10000"
+[draggable]="false" [resizable]="false" [closeOnEscape]="true" [dismissableMask]="true">
+    <div class="signature-container">
+        <signature-pad [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()"></signature-pad>
+    </div>
+
+    <div class="buttons">
+        <button class="clear" (click)="clearSignature()">Effacer</button>
+        <button class="send" (click)="savePad()">Envoyer</button>
+    </div>
+</p-dialog>
+<button (click)="showDialog()" class="button-sign">Signer</button>
+
+

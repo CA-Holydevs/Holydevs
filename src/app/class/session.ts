@@ -1,6 +1,6 @@
 export class Session {
-    private _id: String;
-    private _name: String;
+    private _id: string;
+    private _name: string;
 
     constructor(id = "", name = "") {
         this._id = id;
@@ -12,23 +12,23 @@ export class Session {
         this._name = session.name;
     }
 
-    get id(): String {
+    get id(): string {
         return this._id;
     }
 
-    set id(value: String) {
+    set id(value: string) {
         this._id = value;
     }
     
-    get name(): String {
+    get name(): string {
         return this._name;
     }
 
-    set name(value: String) {
+    set name(value: string) {
         this._name = value;
     }
 
-    toString(): string{
+    tostring(): string{
         let str = '{';
         if(this._id){
           str += `"id" : "${this._id}",`;

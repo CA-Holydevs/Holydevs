@@ -1,12 +1,16 @@
 <div class="liste">
     <div class="nom-liste-des-participants"><strong>Liste des participants</strong>
-        <button class="mail" (click)="mail(content)">Mail</button>
-        <button class="absent" (click)="absent(content2)">Absent</button></div>
+        <span class="buttons"><button class="mail" (click)="mail(content)">Mail</button>
+            <span style="margin-left: 20px;"></span>
+        <button class="absent" (click)="absent(content2)">Absent</button></span></div>
     <div class="container">
         <ul>
             <li *ngFor="let student of studentsList">
-                <span class="eleve">{{ student.name }}</span>
-                <span class="signature">{{ student.signature }}</span>
+                <span class="eleve blue">{{ student.name }}</span>
+                <span *ngIf="student.comment !== null" >{{student.comment}}</span>
+                <span *ngIf="student.etat == 'Waiting'" ><button (click)="showDialog(student.id, student.name)" class="button-sign">Signer</button></span>
+                <span *ngIf="student.etat == 'Absent'" class="roundRed"></span>
+                <span *ngIf="student.signatureImg" ><img src='{{ student.signatureImg }}' /></span>
             </li>
         </ul>
     </div>
@@ -14,12 +18,41 @@
 
 <ng-template #content let-modal>
     <div class="modal-body">
-        <div class="envoie-mail">Envoyer un mail à</div>
+        <div class="envoie-mail">Envoyer un mail à :</div>
+        <ul>
+            <li *ngFor="let student of studentsList">
+                <span class="eleve">{{ student.name }}</span>
+                <!-- <span class="signature"><input type="checkbox"></span> -->
+                <span class="checkbox"><p-checkbox [binary]="true"></p-checkbox></span> 
+            </li>
+        </ul>
     </div>
 </ng-template>
 
 <ng-template #content2 let-modal>
     <div class="modal-body">
-        <div class="mettre-absent">Mettre absent:</div>
+        <div class="mettre-absent">Mettre absent :</div>
+        <ul>
+            <li *ngFor="let student of studentsList">
+                <span class="eleve">{{ student.name }}</span>
+                <!-- <span class="signature"><input type="checkbox"></span> -->
+                <span class="checkbox"><p-checkbox [binary]="true"></p-checkbox></span> 
+            </li>
+        </ul>
     </div>
 </ng-template>
+
+<p-dialog header="{{ studentName }}" [(visible)]="displayModal" [modal]="true" [style]="{width: '50vw'}" [baseZIndex]="10"
+[draggable]="false" [resizable]="false" [closeAriaLabel]="'close'">
+    <div class="signature-container">
+        <signature-pad [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()"></signature-pad>
+    </div>
+
+    <div class="buttonsPad">
+        <button (click)="closeDialog()">Fermer</button>
+        <div>
+            <button class="clear" (click)="clearSignature()">Effacer</button>
+            <button class="send" (click)="savePad(studentId)">Envoyer</button>
+        </div>
+    </div>
+</p-dialog>

@@ -10,49 +10,33 @@ import { AccordionModule } from 'primeng/accordion';
 import { PanelModule } from 'primeng/panel';
 import { ButtonModule } from 'primeng/button';
 import { CheckboxModule } from 'primeng/checkbox';
-import { CardModule } from 'primeng/card';
-import { CalendarModule } from "primeng/calendar";
+import { DialogModule } from 'primeng/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { SignaturePadModule } from 'angular2-signaturepad';
 
 
 /* Aplication components */
 import { ConnexionComponent } from './connexion/connexion.component';
-import { ModuleListComponent } from './module-list/module-list.component';
 import { FirstConnexionComponent } from './first-connexion/first-connexion.component';
-import { StructPrincipaleComponent } from './struct-principale/struct-principale.component';
-import { CardParticipantComponent } from './card-participant/card-participant.component';
+import { SocialLinksComponent } from './social-links/social-links.component';
 import { CardModuleComponent } from './card-module/card-module.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CalenderComponent } from './calender/calender.component';
 import { ReactiveFormsModule } from '@angular/forms';
-
-
-/* Application modules */
+/* Aplication modules */
 import { DashboardModule } from './dashboard/dashboard.module';
-import { MenuModuleComponent } from './menu-module/menu-module.component';
-import { QRcodeComponent } from './qrcode/qrcode.component';
-import { MenuSessionComponent } from './menu-session/menu-session.component';
 import { ListeDesParticipantsComponent } from './liste-des-participants/liste-des-participants.component';
 import { SignatureComponent } from './signature/signature.component';
 import { InfoModuleComponent } from './info-module/info-module.component';
 import { ModaleDeconnexionComponent } from './modale-deconnexion/modale-deconnexion.component';
-import {DialogModule} from 'primeng/dialog';
 import { NavigationTabsModule } from './dashboard/navigation-tabs/navigation-tabs.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     ConnexionComponent,
-    ModuleListComponent,
     FirstConnexionComponent,
-    StructPrincipaleComponent,
-    CardParticipantComponent,
-    CardModuleComponent,
-    CalenderComponent,
-    MenuModuleComponent,
-    QRcodeComponent,
-    MenuSessionComponent,
+    SocialLinksComponent,
     ListeDesParticipantsComponent,
     SignatureComponent,
     InfoModuleComponent,
@@ -67,12 +51,12 @@ import { NavigationTabsModule } from './dashboard/navigation-tabs/navigation-tab
     AccordionModule,
     ReactiveFormsModule,
     DialogModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
-    CardModule,
+    DialogModule,
     SignaturePadModule,
-    CalendarModule,
     CommonModule,
-    NavigationTabsModule,
+    NavigationTabsModule
   ],
   bootstrap: [AppComponent],
 })

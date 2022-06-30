@@ -1,28 +1,26 @@
+@import "/src/assets/scss/variables";
 .listitle {
-	background-color: #3F93D2;
+	background-color: $blue;
 	min-height: 62px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	align-content: center;
-	color: white;
+	color: $white;
 	&::before {
 		content: "";
 		width: 20px;
 		height: 20px;
 		transition: .5s;
-		color: white;
+		color: $white;
 		float: left;
-		box-shadow: -2px 2px 0 white;
+		box-shadow: -2px 2px 0 $white;
 		transform: rotate(45deg);
-        
-        
+
+
     }
 	}
 
-.card {
-	height: 100%;
-}
 .card-title {
 	text-align: left;
 }

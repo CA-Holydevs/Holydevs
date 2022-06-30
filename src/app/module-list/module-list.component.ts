@@ -3,9 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import {Module} from "../class/module";
 import {ModuleService} from "../services/module.service";
 
-
-
-
 @Component({
   selector: 'app-module-list',
   templateUrl: './module-list.component.html',

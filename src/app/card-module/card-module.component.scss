@@ -2,11 +2,15 @@
 
 p-card{
     display: block;
-    margin: 0 auto;
-    width: 90%;
-    padding: 0;
-    border: 1px solid $beige;
+    margin: 1rem;
+    width: 16rem;
+    //border: 1px solid $beige;
     border-radius: 5px;
+
+    .p-component {
+        border-radius: 5px;
+    }
+
     .title{
         text-align: center;
         margin:0;
@@ -14,6 +18,8 @@ p-card{
         background-color: $pale-turquoise-blue;
         padding: 0.5em 0;
         font-size: 1.2rem;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
     }
     .in-progress {
         background: $green;

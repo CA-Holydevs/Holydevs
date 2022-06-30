@@ -23,6 +23,19 @@
     padding: 10px;
 }
 
+.buttons{
+    float:right;
+    margin-right: 50px;
+    button{
+        font-size: initial;
+    }
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}
+
 .mail, .absent{
     border-radius: 20px;
     color: $white;
@@ -31,11 +44,12 @@
 
 .mail{
     background-color: $yellow;
-    width: 70px;
 }
 
 .absent{
     background-color: $red;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 ul{
@@ -46,21 +60,76 @@ li{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgb(197, 196, 196);
+    align-items: center;
 }
 
 .eleve{
-    color: rgb(197, 196, 196);
+    color: $white;
     padding: 15px;
     font-size: 20px;
 }
-
-.signature{
-    color: rgb(197, 196, 196);
-    padding: 15px;
+.eleve.blue{
+    color: $blue;
 }
 
 .modal-body{
-    background-color: $pale-turquoise-blue;
-    border:0px solid black;
-    border-radius: 5px;
+    background-color: $blue;
+}
+
+.envoie-mail, .mettre-absent{
+    text-align: center;
+    color: $white;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid $beige;
+    font-size: 30px;
+    align-items: center;
+}
+.modal-body ul{
+    padding:0;
+}
+
+.modal-body li{
+    border:none;
+}
+
+.checkbox{
+    width:30px;
+    margin-top: 0px;
+}
+
+button{
+    max-width: 20rem;
+    background-color: $yellow;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 0.5rem 1rem;
+    
+}
+
+.buttonsPad{
+    display: flex;
+    justify-content: space-between;
+    button.clear{
+        background-color: $beige;
+        margin-right: 10px;
+    }
+    button.send{
+        background-color: $green;
+    }    
+}
+
+.roundRed{
+    border-radius: 50%;
+    background-color: $red;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span#pr_id_1-label{
+    text-align: center;
 }

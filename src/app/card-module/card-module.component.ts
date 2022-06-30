@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card-module',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-module.component.scss']
 })
 export class CardModuleComponent implements OnInit {
+
+  @Input() cardTitle : string = '';
+  @Input() cardDuration : string = '';
+  @Input() moduleKey : String = '';
 
   constructor() { }
 

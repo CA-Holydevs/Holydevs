@@ -1,6 +1,6 @@
-<p-card>
+<p-card [routerLink]="['/info-module', {name: moduleKey}]">
     <ng-template pTemplate="header">
-        <div class="title">Nom module</div>
+        <div class="title">{{cardTitle}}</div>
     </ng-template>
     <ng-template pTemplate="content">
         <p class="center">
@@ -10,7 +10,7 @@
         <div class="flex">
             <p class="center">
                 <em>Durée : </em>
-                2h
+                {{cardDuration}}
             </p>
             <aside>
                 <p class="in-progress">

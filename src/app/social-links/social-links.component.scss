@@ -1,0 +1,15 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "/src/assets/scss/variables";
+
+.logos {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    a {
+        margin-right: 1rem;
+        color: $blue;
+        &::before {
+            font-size: 2rem;
+        }
+    }
+}

@@ -24,7 +24,8 @@
                 "name": "Jean-Jacques",
                 "role": "Participant"
             }
-        ]
+        ],
+        "session_id": "8"
     },
     {
         "name": "Framework React",
@@ -51,7 +52,8 @@
                 "name": "Jean-Jacques",
                 "role": "Participant"
             }
-        ]
+        ],
+        "session_id": "8"
     },
     {
         "name": "Framework Angular",
@@ -78,7 +80,8 @@
                 "name": "Jean-Jacques",
                 "role": "Participant"
             }
-        ]
+        ],
+        "session_id": "8"
     },
     {
         "name": "Framework Symfony",
@@ -105,7 +108,8 @@
                 "name": "Jean-Jacques",
                 "role": "Participant"
             }
-        ]
+        ],
+        "session_id": "8"
     }
     
 ]
