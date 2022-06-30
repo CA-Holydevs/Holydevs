@@ -60,7 +60,20 @@ li{
 }
 
 .modal-body{
-    background-color: $pale-turquoise-blue;
-    border:0px solid black;
-    border-radius: 5px;
+    background-color: $blue;
+}
+
+.envoie-mail, .mettre-absent{
+    text-align: center;
+    color: $white;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid orange;
+    font-size: 30px;
+}
+
+input[type="checkbox"]{
+    width:30px;
+    height:30px;
+    color: orange;
 }
