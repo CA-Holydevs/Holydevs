@@ -8,11 +8,11 @@ import { CardParticipantComponent } from './card-participant/card-participant.co
 import { CalenderComponent } from './calender/calender.component';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { MenuModuleComponent } from './menu-module/menu-module.component';
+import { MenuModuleComponent } from './dashboard/menu-module/menu-module.component';
+import { MenuSessionComponent } from './dashboard/menu-session/menu-session.component';
 import { InfoModuleComponent } from './info-module/info-module.component'
 import { CardModuleComponent } from './card-module/card-module.component';
 import { MyAccountComponent } from './dashboard/my-account/my-account.component';
-import { MenuSessionComponent } from './menu-session/menu-session.component';
 import { ListeDesParticipantsComponent } from './liste-des-participants/liste-des-participants.component';
 import { SignatureComponent } from './signature/signature.component';
 import { QRcodeComponent } from './dashboard/qrcode/qrcode.component';

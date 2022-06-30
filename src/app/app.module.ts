@@ -30,8 +30,6 @@ import { CalenderComponent } from './calender/calender.component';
 import { ReactiveFormsModule } from '@angular/forms';
 /* Aplication modules */
 import { DashboardModule } from './dashboard/dashboard.module';
-import { MenuModuleComponent } from './menu-module/menu-module.component';
-import { MenuSessionComponent } from './menu-session/menu-session.component';
 import { ListeDesParticipantsComponent } from './liste-des-participants/liste-des-participants.component';
 import { SignatureComponent } from './signature/signature.component';
 import { InfoModuleComponent } from './info-module/info-module.component';
@@ -48,8 +46,6 @@ import { NavigationTabsModule } from './dashboard/navigation-tabs/navigation-tab
     CardParticipantComponent,
     CardModuleComponent,
     CalenderComponent,
-    MenuModuleComponent,
-    MenuSessionComponent,
     ListeDesParticipantsComponent,
     SignatureComponent,
     InfoModuleComponent,

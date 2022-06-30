@@ -13,6 +13,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { QRcodeComponent } from './qrcode/qrcode.component';
 import { MyAccountComponent } from './my-account/my-account.component';
+import { MenuModuleComponent } from './menu-module/menu-module.component';
+import { MenuSessionComponent } from './menu-session/menu-session.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { MyAccountComponent } from './my-account/my-account.component';
     DashboardHeaderComponent,
     QRcodeComponent,
     MyAccountComponent,
+    MenuModuleComponent,
+    MenuSessionComponent,
     NavigationTabsComponent
   ],
   imports: [

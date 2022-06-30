@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
-import {Module} from "../class/module";
-import {ModuleService} from "../services/module.service";
+import { Module } from 'src/app/class/module';
+import { ModuleService } from 'src/app/services/module.service';
 
 @Component({
-  selector: 'app-menu-module',
+  selector: 'dashboard-menu-module',
   templateUrl: './menu-module.component.html',
   styleUrls: ['./menu-module.component.scss']
 })

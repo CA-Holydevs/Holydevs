@@ -1,3 +1,19 @@
+@import "/src/assets/scss/variables";
+
 .profile-modal .p-dialog .p-dialog-content {
     border-radius: 5px;
+}
+
+.dashboard-main {
+    display: flex;
+    background-color: $beige;
+
+    .dashboard-navigation {
+        margin: 2rem;
+        width: 75%;
+    }
+
+    .dashboard-sessions, .dashboard-modules {
+        margin: 2rem;
+    }
 }
